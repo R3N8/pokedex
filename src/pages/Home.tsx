@@ -43,9 +43,9 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-body-gradient">
       {/* NAV */}
-      <nav className="sticky top-0 z-50 bg-bg-nav-pri px-4 py-3 flex flex-wrap items-center justify-between gap-3">
-        <div className="flex justify-center items-center gap-2">
-            <img src="public/game.png" alt="logo" className="w-8 h-8 border-2 rounded-full border-text-body" />
+      <nav className="sticky top-0 z-50 flex flex-wrap items-center justify-between gap-3 px-4 py-3 bg-bg-nav-pri">
+        <div className="flex items-center justify-center gap-2">
+            <img src="/public/logo.png" alt="logo" className="w-8 h-8 border-2 rounded-full border-text-body" />
             <p className="font-display text-text-title">Pokédex</p>
         </div>
         
@@ -63,14 +63,14 @@ export default function Home() {
             <div key={p.name} className="grid-cell">
               <Link
                 to={`/pokemon/${id}`}
-                className="relative text-center p-4 flex flex-col items-center justify-center hover:bg-white/10 hover:backdrop-blur-md hover:border hover:border-white/30 hover:shadow-xl rounded-lg"
+                className="relative flex flex-col items-center justify-center p-4 text-center rounded-lg hover:bg-white/10 hover:backdrop-blur-md hover:border hover:border-white/30 hover:shadow-xl"
               >
-                <span className="absolute top-1 right-2 font-body text-xs">
+                <span className="absolute text-xs top-1 right-2 font-body">
                   #{id.toString().padStart(3, "0")}
                 </span>
 
                 <img
-                  className="w-20 h-20 md:w-30 md:h-30 object-cover"
+                  className="object-cover w-20 h-20 md:w-30 md:h-30"
                   src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${id}.png`}
                   alt={p.name}
                 />
