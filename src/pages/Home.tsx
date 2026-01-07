@@ -45,7 +45,7 @@ export default function Home() {
       {/* NAV */}
       <nav className="sticky top-0 z-50 flex flex-wrap items-center justify-between gap-3 px-4 py-3 bg-bg-nav-pri">
         <div className="flex items-center justify-center gap-2">
-            <img src="/public/logo_pokeball.svg" alt="logo" className="w-8 h-8 border-2 rounded-full border-text-body" />
+            <img src="/logo_pokeball.svg" alt="logo" className="w-8 h-8 border-2 rounded-full border-text-body" />
             <p className="font-display text-text-title">Pokédex</p>
         </div>
         
